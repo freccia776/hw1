@@ -1,0 +1,172 @@
+body{
+    background-color: rgba(26,28,40,255);
+    margin: 0; 
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    font-family: "Roboto", sans-serif;
+    user-select: none; 
+    align-items: center;
+  }
+
+  main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+
+  }
+
+.film-container {
+  margin-top: 150px;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  width: 95%;
+  min-height: 100vh; 
+  flex-grow: 1;  
+  
+
+}
+
+
+section {
+  margin-bottom: 50px;
+}
+
+
+.film-info{
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.film-poster {
+  display: flex;
+  justify-content: center;
+  width: 200px;
+  overflow: hidden;
+  border-radius: 12px;
+  
+}
+
+.film-poster img{
+  height: 300px;
+  width: 200px;
+}
+
+
+
+
+
+.film-details {
+     flex: 1;
+    min-width: 0;
+  display: flex;
+  flex-direction: column;
+ 
+  color: white;
+}
+
+
+.film-play {
+
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+gap: 10px; 
+width: 20%;
+ 
+
+
+}
+
+.film-play img{
+    width: 70px;
+    height: 70px;
+}
+
+.film-details h1 {
+  display: block;
+  margin-top: 0;
+  font-size: 2rem;
+}
+
+.film-details p {
+  margin: 0.5rem 0;
+  line-height: 1.6;
+}
+
+.film-description {
+  color: white;
+}
+
+
+
+.film-trailer iframe{
+  width: 100%;
+    aspect-ratio: 16 / 9;
+    height: auto;
+    max-width: 560px;
+
+}
+
+
+.film-trailer p{
+  color: white;
+}
+
+.smartphone-title {
+  display: none;
+  color: white;
+  font-size: 2rem;
+}
+
+
+@media (max-width: 1200px) {
+
+  .film-container{
+    margin-top: 100px;
+  }
+  
+  .film-details h1{
+    display: none;
+  }
+  .smartphone-title{
+    display: unset;
+  }
+  
+  .film-info{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  
+.film-poster {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  height: 320px;
+  width: 250px;
+  border-radius: 12px;
+ 
+}
+
+.film-poster img{
+  height: 320px;
+  width: 250px;
+}
+
+  .film-play img{ /* like */
+    width: 50px;
+    height: 50px;
+}
+  
+}
+
+.hidden{
+  display: none;
+}
+
+
